@@ -15,8 +15,8 @@ list_of_things = {"rubber boots": 1000, "sleeping bag": 700, "flip-flops": 300, 
                   }
 
 print(f'Common weight of things: {sum(list_of_things.values())} g.')
-for L in range(len(list_of_things) + 1):
-    num = 0
+num = 0
+for L in range(1, len(list_of_things) + 1):
     for subset in itertools.combinations(list(list_of_things.keys()), L):
         summ = 0
         for thing in subset:
